@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Números</title>
+</head>
+<body>
+    <form id="meuFormulario">
+        <label for="CampoA">Campo A</label>
+        <input type="number" id="campoA" name="CampoA">
+        <label for="CampoB">Campo B</label>
+        <input type="number" id="campoB" name="CampoB">
+        <input type="submit" value= "Verificar">
+    </form>
+    
+    <div id="mensagem"></div>
+    
+    <script>
+        document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+        //para conseguir obter os valores dos campos A e B / \
+        //A função parseInt() analisa um argumento string e retorna um inteiro na base especificada.
+
+        var valorA = parseInt(document.getElementById('campoA').value);
+        var valorB = parseInt(document.getElementById('campoB').value);
+
+        if (valorB > valorA) {
+            document.getElementById('mensagem').innerHTML = "Formulário está válido, B é maior que A!";
+        } else {
+            document.getElementById('mensagem').innerHTML = "Formulário não está válido, A é maior que B!";
+        }
+
+    });
+    </script>
+</body>
+</html>
