@@ -1,0 +1,45 @@
+*{
+
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #301a1a;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:#72bab0;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 20px;
+    color: #d1284f;
+}
+
+
+div {
+    margin-left: 42%;
+    margin-right: 50%
+}
+
+
+.finalizada {
+    text-decoration: line-through
+}
+
+button {
+    padding: 10px ;
+    background-color: #72bab0;
+
+}
+
+#NomeDaTarefa {
+    padding: 10px;
+    background-color: azure;
+}
+
+
+
+
