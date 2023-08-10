@@ -1,0 +1,168 @@
+/* 
+font-family: 'Comfortaa', cursive;
+font-family: 'Poppins', sans-serif;
+*/
+/* Estilos Gerais */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  }
+  
+  header {
+    font-family: 'Comfortaa', cursive;
+    background-color: rgba(255, 255, 255, 0.089);
+    color: #3E5151;
+    margin-bottom: 56px;
+    width: 100vw;                             
+  }
+  
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+header li {
+    list-style: none;
+    font-weight: 600;
+}
+
+header li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para a Seção "Sobre a Loja" */
+
+  .about-section {
+    display: flex;
+    align-items: start;
+    margin-bottom: 20px;
+  }
+
+  .title-line {
+    width: 50vw; /* Largura da linha */
+    height: 0.5vw; /* Altura da linha */
+    background-color: #f8f8f84b; /* Cor da linha */
+    margin: 0.3vw auto; /* Espaçamento da linha */
+  }
+  
+  /* Estilos para a Seção de Produtos */
+
+.products-heading {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .linep-products {
+    display: block;
+    align-self: flex-end;
+    width: 80vw; /* Largura da linha */
+    height: 0.5vw; /* Altura da linha */
+    background-color: #f8f8f84b; /* Cor da linha */
+    margin: 0.3vw auto; /* Espaçamento da linha */
+  }
+  
+  .product {
+    flex: 1;
+    max-width: 25%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+ 
+   /* Fazendo a imagem da loja responsiva em dispositivos móveis */
+   @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column; /* Alinhar os elementos verticalmente */
+    }
+  
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .about-text {
+      text-align: center;
+      padding: 0 20px;
+    }
+  }
+  
+  /* Ajuste para telas grandes */
+  @media (min-width: 769px) {
+    .about-image {
+      flex: 1;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+  
+    /* Fazendo a imagem da loja responsiva */
+    .about-image img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .about-text {
+      flex: 1;
+      text-align: left;
+      padding: 0 20px;
+    }
+  }
+  
+/* Estilos para a Seção de Produtos em dispositivos móveis */
+@media (max-width: 768px) {
+    .product-section {
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+   }
+    .product {
+      flex: 1;
+      max-width: 50%; /* Mostrar um produtos por linha */
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+        max-width: 80%; /* Largura da imagem */
+        margin: 0 auto; /* Centralizar a imagem */
+   
+  }
