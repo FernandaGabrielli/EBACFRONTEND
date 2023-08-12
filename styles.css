@@ -10,20 +10,20 @@ body {
     margin: 0;
     padding: 0;
     background-image: linear-gradient(to right, #DECBA4, #3E5151);
-  }
+}
   
-  header {
+header {
     font-family: 'Comfortaa', cursive;
     background-color: rgba(255, 255, 255, 0.089);
     color: #3E5151;
-    margin-bottom: 56px;
+    margin-bottom: 20px;
     width: 100vw;                             
-  }
+}
   
-  header .container {
+header .container {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    padding: 10px;
     align-items: center;
 }
 
@@ -41,30 +41,30 @@ header li {
 header li a {
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 16px;
 }
 
-  .container {
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-  }
+}
   
   /* Estilos para a Seção "Sobre a Loja" */
 
-  .about-section {
+.about-section {
     display: flex;
     align-items: start;
     margin-bottom: 20px;
-  }
+}
 
-  .title-line {
+.title-line {
     width: 50vw; /* Largura da linha */
     height: 0.5vw; /* Altura da linha */
     background-color: #f8f8f84b; /* Cor da linha */
     margin: 0.3vw auto; /* Espaçamento da linha */
-  }
-  
+}
+    
   /* Estilos para a Seção de Produtos */
 
 .products-heading {
@@ -101,15 +101,33 @@ header li a {
   }
   
   .product button {
-    background-color: #333;
+    background-color: #00000050;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 12px;
     cursor: pointer;
   }
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Fundo preto transparente */
+  color: white; /* Cor do texto */
+  text-align: center; /* Centralizar o texto */
+  padding: 20px; /* Espaçamento interno */
+}
  
    /* Fazendo a imagem da loja responsiva em dispositivos móveis */
-   @media (max-width: 768px) {
+@media (max-width: 768px) {
+   
+  
+h1 {
+  font-size: 25px;                         
+}
+  header li a {
+    font-size: 14px;
+    width:15px;
+    height:15px;
+}
+   
     .about-section {
       flex-direction: column; /* Alinhar os elementos verticalmente */
     }
@@ -156,7 +174,7 @@ header li a {
    }
     .product {
       flex: 1;
-      max-width: 50%; /* Mostrar um produtos por linha */
+      max-width: 100%; /* Mostrar um produtos por linha */
       padding: 10px;
       text-align: center;
     }
