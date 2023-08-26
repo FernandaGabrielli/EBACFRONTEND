@@ -1,0 +1,120 @@
+@import "mapas.less";
+
+@breakpointMobile: ~"(max-width: 767px)";
+@breakpointTablet: ~"(min-width:768px) and (max-width: 1023px)";
+
+.marginbottom8 {
+    margin-bottom: 8px;
+}
+
+.fontsize14 {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham', sans-serif;
+}
+
+body {
+    background-color: #colors[backgroundcolor];
+    color: #colors[textcolor];
+}
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media @breakpointMobile {
+        width: 70%;
+    }
+
+    @media @breakpointTablet {
+        width: 80%;
+    }
+}
+
+header {
+    padding-bottom: 24px;
+
+    .profile-avatar {
+        display: block;
+        margin: 0 auto 24px;
+        border-radius: 100px;
+    }
+}
+
+.li {
+    list-style: none;
+}
+
+.profile-bio {
+    text-align: center;
+
+    &-name {
+        font-size: 16px;
+        .marginbottom8();
+    }
+
+    &-subtitle {
+        .fontsize14();
+        .marginbottom8();
+    }
+
+    &-description {
+        .fontsize14();
+        opacity: 0.7;
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 300px;
+    width: 100px;
+    margin: 0 auto;
+
+    li {
+        list-style: none;
+
+        img {
+            transition: all ease .3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+
+.project-list {
+    margin-top: 32px;
+
+    li.project-list-item {
+        a {
+            text-decoration: none;
+            background-color: #colors[buttoncolor];
+            display: block;
+            padding: 16px 20px;
+            margin-bottom: 16px;
+            text-align: center;
+            color: #colors[textcolor];
+            font-weight: bold;
+            border-radius: 30px;
+            border: 2px solid #colors[buttoncolor];
+            transition: all ease .5s;
+
+            &:hover {
+                background-color: transparent;
+                color: #colors[buttoncolor];
+            }
+        }
+    }
+}
