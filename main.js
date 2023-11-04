@@ -6,7 +6,7 @@ function Paciente(nome, idade, endereco, especialidade) {
     this.especialidade = especialidade;
 }
 
-// Classes que herdam da classe Paciente para representar pacientes com diferentes especialidades
+// Classes que herdaram da classe Paciente para representar pacientes
 function Cardiologista(nome, idade, endereco) {
     Paciente.call(this, nome, idade, endereco, "Cardiologia");
 
